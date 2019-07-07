@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AuthActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/keyboardRLWithText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginBottom="@dimen/dp_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textKeyboard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:text="Use Password"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/textKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/keyboardRL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:maxLength="4"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dp_30" />
+
+        <RelativeLayout
+            android:id="@+id/keyboardRL"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <TextView
+                android:id="@+id/numberOne"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:text="1"
+                android:textStyle="bold"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/numberTwo"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="2"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/numberThree"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="3"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/numberFour"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:textStyle="bold"
+                android:layout_below="@id/numberOne"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/numberFive"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_below="@id/numberOne"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:text="5"
+                android:textStyle="bold"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/numberSix"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_below="@id/numberOne"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="6"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/numberSeven"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_below="@id/numberFour"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="7"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/numberEight"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_below="@id/numberFour"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="8"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <TextView
+                android:id="@+id/numberNine"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_below="@id/numberFour"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <ImageView
+                android:id="@+id/numberBack"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_below="@id/numberSeven"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:contentDescription="@null"
+                android:padding="@dimen/dp_15"
+                android:src="@drawable/ic_reply" />
+
+            <TextView
+                android:id="@+id/numberZero"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_below="@id/numberSeven"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="0"
+                android:textColor="@drawable/text_selector"
+                android:textSize="@dimen/dp_30" />
+
+            <ImageView
+                android:id="@+id/numberCross"
+                android:layout_width="@dimen/dp_60"
+                android:layout_height="@dimen/dp_60"
+                android:layout_below="@id/numberSeven"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/round_app_color"
+                android:contentDescription="@null"
+                android:padding="@dimen/dp_20"
+                android:src="@drawable/ic_close" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectDeviceActivity">
+
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:layout_weight="1"
+            android:onClick="loadParedDevices"
+            android:text="Scan Devices"
+            android:textColor="@drawable/button_selector" />
+
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_8"
+            android:layout_weight="1"
+            android:onClick="loadParedDevices"
+            android:text="Load Devices"
+            android:textColor="@drawable/button_selector" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_PairedDevices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dataText"
+        android:layout_below="@+id/buttonLayout"
+        tools:listitem="@layout/item_device">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/dataText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lastLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:text="Sample"
+        android:textSize="@dimen/sp_20" />
+
+    <LinearLayout
+        android:id="@+id/lastLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/inputData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1" />
+
+
+        <Button
+            android:id="@+id/clickButton"
+            android:onClick="loadParedDevices"
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1"
+            android:text="click" />
+
+    </LinearLayout>
+
+</RelativeLayout>
